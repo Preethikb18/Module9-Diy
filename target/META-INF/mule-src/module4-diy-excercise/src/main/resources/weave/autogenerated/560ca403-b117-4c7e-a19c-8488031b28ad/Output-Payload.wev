@@ -1,0 +1,15 @@
+%dw 2.0
+
+type auto_560ca403_b117_4c7e_a19c_8488031b28ad_Output_Payload = {
+  firstName: String, 
+  lastName: String, 
+  country: String, 
+  address: String, 
+  id?: String, 
+  postal: String, 
+  creationDate?: String, 
+  accType: String, 
+  miles: Number, 
+  _?: Any
+}
+

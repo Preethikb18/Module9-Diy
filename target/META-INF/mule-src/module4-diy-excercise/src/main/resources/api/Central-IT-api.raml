@@ -1,0 +1,66 @@
+#%RAML 1.0
+title: Central IT Group API
+types:
+  CustomerDataType: !include CustomerDataType.raml
+
+/accounts:
+  description: Retrieves a list of all accounts based on the given   query parameters
+  
+  get:
+  
+    headers:
+      user_id:
+        displayName: Requester ID
+        type: string
+        required: true
+        default: Preethi.K.B
+    queryParameters:
+      name:
+        required: false
+      accType: 
+        required: false
+        enum:
+          - personal
+          - business
+      
+    responses:
+          200:
+                body:
+                      application/json:
+                            type: CustomerDataType[]
+                            examples:
+                              output: !include Customerexample.raml
+          
+                                                                                                                      
+  post:
+    
+    body:
+      application/json:
+        type: CustomerDataType
+        examples:
+          input: !include examples/CustomerNoIdExample.raml
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              Message: Accounts created
+  /{ID}:
+   
+   get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: CustomerDataType
+            examples:
+              output: !include examples/CustomerIDExample.raml
+            
+ 
+
+              
+
+     
+          
+
+    

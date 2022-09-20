@@ -1,0 +1,24 @@
+[
+  {
+    "ID": 5039,
+    "firstName": "Sunny",
+    "lastName": Kootgal",
+    "address": "154 Percy St, Ingleburn",
+    "postal": "2565",
+    "country": "Australia",
+    "miles": 543,
+    "creationDate": "2019-08-21T04:34:41.098Z",
+    "accType": "business"
+  },
+  {
+    "ID": 5457,
+    "firstName": "Josh",
+    "lastName": Kootgal",
+    "address": "34 Sitella St, Ingleburn",
+    "postal": "2565",
+    "country": "Australia",
+    "miles": 534,
+    "creationDate": "2019-08-21T04:34:41.098Z",
+    "accType": "personal"
+  }
+]
